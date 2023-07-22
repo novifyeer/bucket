@@ -1,6 +1,6 @@
 ﻿namespace Bucket.Domain.Catalog.CatalogBrand;
 
-public readonly record struct CatalogBrandId
+public readonly record struct CatalogBrandId : IDomainObjectValue
 {
     public int Value { get; init; }
 
