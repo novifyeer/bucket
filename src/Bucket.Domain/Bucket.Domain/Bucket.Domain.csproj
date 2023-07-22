@@ -5,9 +5,9 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
     </PropertyGroup>
-    
+
     <ItemGroup>
-        <InternalsVisibleTo Include="Bucket.Domain.UnitTests" />
+      <Folder Include="Catalog\" />
     </ItemGroup>
 
 </Project>

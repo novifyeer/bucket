@@ -7,7 +7,7 @@
 
         <IsPackable>false</IsPackable>
 
-        <RootNamespace>Bucket.UnitTests</RootNamespace>
+        <RootNamespace>Bucket.Domain.UnitTests</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
