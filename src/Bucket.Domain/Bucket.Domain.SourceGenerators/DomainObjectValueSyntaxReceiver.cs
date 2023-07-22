@@ -7,11 +7,11 @@ public class DomainObjectValueSyntaxReceiver : ISyntaxReceiver
 {
     private const string ReceiverEntityName = "IDomainObjectValue";
 
-    public List<StructDeclarationSyntax> DomainObjectValues { get; } = new();
+    public List<RecordDeclarationSyntax> DomainObjectValues { get; } = new();
     
     public void OnVisitSyntaxNode(SyntaxNode syntaxNode)
     {
-        if (syntaxNode is not StructDeclarationSyntax structDeclaration) 
+        if (syntaxNode is not RecordDeclarationSyntax structDeclaration) 
             return;
         
         if (HasObjectValueInterface(structDeclaration, ReceiverEntityName))
@@ -20,7 +20,7 @@ public class DomainObjectValueSyntaxReceiver : ISyntaxReceiver
         }
     }
 
-    private bool HasObjectValueInterface(StructDeclarationSyntax syntaxNode, string interfaceName)
+    private bool HasObjectValueInterface(RecordDeclarationSyntax syntaxNode, string interfaceName)
     {
         var baseTypes = syntaxNode.BaseList?.Types.Select(baseType => baseType);
 
