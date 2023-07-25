@@ -1,12 +1,12 @@
 ﻿using Bucket.Domain.Common.Money;
 
-namespace Bucket.Domain.UnitTests.Common.MoneyComplexType;
+namespace Bucket.Domain.UnitTests.Common.MoneyTests;
 
 public class CurrencyTest
 {
     public CurrencyTest () { }
     
-    [Theory(DisplayName = "Currency enum value should equal with ISO 4217")]
+    [Theory(DisplayName = "currency enum value should equal with ISO 4217")]
     [InlineData(Currency.Rub, 643)]
     [InlineData(Currency.Usd, 840)]
     [InlineData(Currency.Eur, 978)]
