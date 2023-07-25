@@ -1,12 +1,12 @@
 ﻿using Bucket.Domain.Common.Money;
 
-namespace Bucket.Domain.UnitTests.Common.MoneyComplexType;
+namespace Bucket.Domain.UnitTests.Common.MoneyTests;
 
 public class MoneyTest
 {
     public MoneyTest () { }
     
-    [Fact(DisplayName = "The values passed to create a complex type must match the public properties")]
+    [Fact(DisplayName = "the values passed to create a money complex type must match the public properties")]
     public void MoneyValuesShouldMatchWithPublicProperties()
     {
         // Arrange
