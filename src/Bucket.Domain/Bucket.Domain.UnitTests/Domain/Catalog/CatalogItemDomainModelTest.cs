@@ -1,7 +1,7 @@
 ﻿using Bucket.Domain.Catalog.CatalogBrand;
 using Bucket.Domain.Catalog.CatalogItem;
 using Bucket.Domain.Catalog.CatalogType;
-using Bucket.Domain.UnitTests.Common.MoneyComplexType.Factories;
+using Bucket.Domain.Common.Money;
 
 namespace Bucket.Domain.UnitTests.Domain.Catalog;
 
@@ -16,7 +16,7 @@ public class CatalogItemDomainModelTest
         var name = CatalogItemName.Create(".NET Bot Black Hoodie");
         var description = CatalogItemDescription.Create(".NET Bot Black Hoodie, and more");
         var availableStock = CatalogItemAvailableStock.Create(100);
-        var price = CatalogItemPrice.Create(MoneyFactory.Create());
+        var price = CatalogItemPrice.Create(Money.Create(100, Currency.Usd));
         
         var brandId = CatalogBrandId.Create(1);
         var typeId = CatalogTypeId.Create(1);

@@ -1,0 +1,1 @@
+﻿global using Bucket.Domain.Common.Amount;
